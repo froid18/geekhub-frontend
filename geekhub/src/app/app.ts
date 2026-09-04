@@ -39,4 +39,6 @@ diminuir() {
   }
 }
 
+nomeTempoReal = 'Juan';
+
 }
