@@ -1,0 +1,36 @@
+<h1>Desafio Final - Matrícula em disciplinas</h1>
+
+<label>Nome do aluno:</label>
+
+<input
+  type="text"
+  [(ngModel)]="nomeAluno"
+>
+
+<p>Aluno: {{ nomeAluno }}</p>
+
+<h3>Quantidade de disciplinas</h3>
+
+<button
+  (click)="diminuir()"
+  [disabled]="quantidadeDisciplinas === 1">
+  -
+</button>
+
+<span>
+  {{ quantidadeDisciplinas }}
+</span>
+
+<button (click)="aumentar()">
+  +
+</button>
+
+<br><br>
+
+<button
+  (click)="confirmarMatricula()"
+  [disabled]="nomeAluno.trim() === ''">
+  Confirmar matrícula
+</button>
+
+<p>{{ mensagem }}</p>
