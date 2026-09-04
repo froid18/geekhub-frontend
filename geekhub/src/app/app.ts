@@ -21,4 +21,10 @@ descricaoImagem = 'Imagem de um produto';
 
 formularioValido = false;
 
+curtidas = 0;
+
+curtir() {
+  this.curtidas++;
+}
+
 }
