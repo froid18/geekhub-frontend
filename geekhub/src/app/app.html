@@ -39,3 +39,19 @@
 <button (click)="curtir()">
   Curtir
 </button>
+
+<hr>
+
+<h1>Exercício 6 - Contador completo</h1>
+
+<p>Quantidade: {{ quantidadeContador }}</p>
+
+<button
+  (click)="diminuir()"
+  [disabled]="quantidadeContador === 0">
+  -
+</button>
+
+<button (click)="aumentar()">
+  +
+</button>

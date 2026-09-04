@@ -27,4 +27,16 @@ curtir() {
   this.curtidas++;
 }
 
+quantidadeContador = 0;
+
+aumentar() {
+  this.quantidadeContador++;
+}
+
+diminuir() {
+  if (this.quantidadeContador > 0) {
+    this.quantidadeContador--;
+  }
+}
+
 }
