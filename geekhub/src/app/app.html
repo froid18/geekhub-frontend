@@ -1,4 +1,8 @@
-Ola estou dentro do APP
+<hr>
 
+<h1>Exercício 2 - Calculando com Interpolation</h1>
 
-<router-outlet />
+<p>Produto: {{ produto }}</p>
+<p>Preço: {{ preco | currency:'BRL' }}</p>
+<p>Quantidade: {{ quantidade }}</p>
+<p>Total: {{ preco * quantidade | currency:'BRL' }}</p>
