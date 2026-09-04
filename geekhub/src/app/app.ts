@@ -19,4 +19,6 @@ export class App {
   imagemProduto = '/produto.svg';
 descricaoImagem = 'Imagem de um produto';
 
+formularioValido = false;
+
 }
