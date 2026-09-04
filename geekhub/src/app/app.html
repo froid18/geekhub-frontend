@@ -1,3 +1,9 @@
+<h1>Exercício 1 - Apresentação do usuário</h1>
+
+<p>
+  Olá, meu nome é {{ nome }}, tenho {{ idade }} anos e curso {{ curso }}.
+</p>
+
 <hr>
 
 <h1>Exercício 2 - Calculando com Interpolation</h1>
@@ -6,3 +12,12 @@
 <p>Preço: {{ preco | currency:'BRL' }}</p>
 <p>Quantidade: {{ quantidade }}</p>
 <p>Total: {{ preco * quantidade | currency:'BRL' }}</p>
+
+<hr>
+
+<h1>Exercício 3 - Imagem dinâmica</h1>
+
+<img
+  [src]="imagemProduto"
+  [alt]="descricaoImagem"
+>

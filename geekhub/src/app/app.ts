@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
 })
 export class App {
 
-  nome = 'Carlos';
-  idade = 25;
-  curso = 'Sistemas de Informação';
+  nome = 'Juan';
+  idade = 19;
+  curso = 'Engenharia de Software';
 
   produto = 'Teclado';
   preco = 150;
   quantidade = 3;
 
-  imagemProduto = 'https://via.placeholder.com/300';
-  descricaoImagem = 'Imagem de um produto';
+  imagemProduto = '/produto.svg';
+descricaoImagem = 'Imagem de um produto';
 
 }
