@@ -1,0 +1,25 @@
+<h2>Tratamento de lista vazia</h2>
+
+<p>Total de nomes: {{ nomes.length }}</p>
+
+<ul>
+  @for (nome of nomes; track $index) {
+    <li>
+      {{ $index + 1 }} - {{ nome }}
+    </li>
+  } @empty {
+    <li>Nenhum nome cadastrado</li>
+  }
+</ul>
+
+<button (click)="removerUltimo()">
+  Remover último
+</button>
+
+<button (click)="limparLista()">
+  Limpar lista
+</button>
+
+<button (click)="restaurarLista()">
+  Restaurar lista
+</button>

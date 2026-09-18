@@ -1,0 +1,19 @@
+<h2>Lista de nomes</h2>
+
+<ul>
+  @for (nome of nomes; track $index; let i = $index; let primeiro = $first; let ultimo = $last) {
+
+    <li>
+      {{ i + 1 }} - {{ nome }}
+
+      @if (primeiro) {
+        <strong> - Primeiro da lista</strong>
+      }
+
+      @if (ultimo) {
+        <strong> - Último da lista</strong>
+      }
+    </li>
+
+  }
+</ul>
