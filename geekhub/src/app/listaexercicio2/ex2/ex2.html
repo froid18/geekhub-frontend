@@ -1,0 +1,15 @@
+<h2>Situação do usuário</h2>
+
+@if (usuarioLogado) {
+  <p>Usuário autenticado</p>
+} @else {
+  <p>Acesso não autorizado</p>
+}
+
+<button (click)="alternarUsuario()">
+  @if (usuarioLogado) {
+    Sair
+  } @else {
+    Entrar
+  }
+</button>
