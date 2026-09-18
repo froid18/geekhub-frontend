@@ -8,7 +8,9 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 
 @NgModule({
-  declarations: [App],
+  declarations: [
+    App
+  ],
 
   imports: [
     BrowserModule,
@@ -16,9 +18,12 @@ import { App } from './app';
     FormsModule
   ],
 
-  providers: [provideBrowserGlobalErrorListeners()],
+  providers: [
+    provideBrowserGlobalErrorListeners()
+  ],
 
-  bootstrap: [App],
+  bootstrap: [
+    App
+  ]
 })
-
-export class AppModule {}
+export class AppModule { }
