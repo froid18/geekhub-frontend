@@ -1,0 +1,30 @@
+<h2>Classificação dos produtos</h2>
+
+<ul>
+  @for (produto of produtos; track produto.id) {
+
+    <li>
+      <p>Produto: {{ produto.nome }}</p>
+
+      <p>Quantidade: {{ produto.quantidade }}</p>
+
+      <p
+        [ngClass]="{
+          'sem-estoque': produto.quantidade === 0,
+          'estoque-baixo': produto.quantidade >= 1 && produto.quantidade <= 5,
+          'estoque-disponivel': produto.quantidade > 5
+        }">
+
+        @if (produto.quantidade === 0) {
+          Sem estoque
+        } @else if (produto.quantidade <= 5) {
+          Estoque baixo
+        } @else {
+          Estoque disponível
+        }
+
+      </p>
+    </li>
+
+  }
+</ul>
