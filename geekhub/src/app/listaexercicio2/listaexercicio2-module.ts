@@ -18,9 +18,26 @@ import { Ex11 } from './ex11/ex11';
 import { Ex12 } from './ex12/ex12';
 import { Ex13 } from './ex13/ex13';
 import { Ex14 } from './ex14/ex14';
+import { Desafio } from './desafio/desafio';
 
 @NgModule({
-  declarations: [Ex1, Ex2, Ex3, Ex4, Ex5, Ex6, Ex7, Ex8, Ex9, Ex10, Ex11, Ex12, Ex13, Ex14],
+  declarations: [
+    Ex1,
+    Ex2,
+    Ex3,
+    Ex4,
+    Ex5,
+    Ex6,
+    Ex7,
+    Ex8,
+    Ex9,
+    Ex10,
+    Ex11,
+    Ex12,
+    Ex13,
+    Ex14,
+    Desafio,
+  ],
 
   imports: [CommonModule, FormsModule, Listaexercicio2RoutingModule],
 })

@@ -15,6 +15,7 @@ import { Ex11 } from './ex11/ex11';
 import { Ex12 } from './ex12/ex12';
 import { Ex13 } from './ex13/ex13';
 import { Ex14 } from './ex14/ex14';
+import { Desafio } from './desafio/desafio';
 
 const routes: Routes = [
   {
@@ -72,6 +73,10 @@ const routes: Routes = [
   {
     path: 'ex14',
     component: Ex14
+  },
+  {
+     path: 'desafio',
+  component: Desafio
   }
 ];
 
