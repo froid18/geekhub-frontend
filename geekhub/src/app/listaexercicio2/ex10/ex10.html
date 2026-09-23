@@ -1,0 +1,37 @@
+<h2>Promoção e estilo dinâmico</h2>
+
+<ul>
+  @for (produto of produtos; track produto.id) {
+
+    <li
+      [ngStyle]="{
+        'font-weight': produto.promocao ? 'bold' : 'normal'
+      }">
+
+      <p>Produto: {{ produto.nome }}</p>
+
+      <p
+        [ngStyle]="{
+          'color': produto.promocao ? 'red' : 'black'
+        }">
+        Preço: {{ produto.preco | currency:'BRL' }}
+      </p>
+
+      <p>Quantidade: {{ produto.quantidade }}</p>
+
+      @if (produto.promocao) {
+        <p>Produto em promoção</p>
+      }
+
+      <button (click)="alterarPromocao(produto)">
+        @if (produto.promocao) {
+          Desativar promoção
+        } @else {
+          Ativar promoção
+        }
+      </button>
+
+    </li>
+
+  }
+</ul>
