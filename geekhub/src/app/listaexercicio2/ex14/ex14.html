@@ -1,0 +1,78 @@
+<h2>Conversão para a sintaxe moderna</h2>
+
+<h3>Exercício 2 - Situação do usuário</h3>
+
+@if (usuarioLogado) {
+  <p>Usuário autenticado</p>
+} @else {
+  <p>Acesso não autorizado</p>
+}
+
+<button (click)="alternarUsuario()">
+  @if (usuarioLogado) {
+    Sair
+  } @else {
+    Entrar
+  }
+</button>
+
+<hr>
+
+<h3>Exercício 12 - Lista de produtos</h3>
+
+<ul>
+  @for (produto of produtos; track produto.id) {
+
+    <li>
+      {{ produto.nome }} - Quantidade: {{ produto.quantidade }}
+    </li>
+
+  } @empty {
+
+    <li>Nenhum produto cadastrado</li>
+
+  }
+</ul>
+
+<hr>
+
+<h3>Exercício 13 - Lista de tarefas</h3>
+
+<ul>
+  @for (tarefa of tarefas; track tarefa.id) {
+
+    <li>
+      <p>Tarefa: {{ tarefa.titulo }}</p>
+      <p>Responsável: {{ tarefa.responsavel }}</p>
+
+      @if (tarefa.concluida) {
+        <p>Concluída</p>
+      } @else {
+        <p>Pendente</p>
+      }
+
+      <button (click)="alterarSituacao(tarefa)">
+        Alterar situação
+      </button>
+    </li>
+
+  } @empty {
+
+    <li>Nenhuma tarefa cadastrada</li>
+
+  }
+</ul>
+
+<hr>
+
+<h3>Diferenças percebidas</h3>
+
+<p>
+  1. A sintaxe moderna usa &#64;if e &#64;for diretamente no HTML,
+  sem precisar usar *ngIf e *ngFor.
+</p>
+
+<p>
+  2. O &#64;for permite usar &#64;empty para tratar listas vazias
+  e utiliza track para identificar cada item.
+</p>
