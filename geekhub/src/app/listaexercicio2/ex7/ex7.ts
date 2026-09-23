@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,4 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './ex7.html',
   styleUrl: './ex7.scss',
 })
-export class Ex7 {}
+export class Ex7 {
+
+  disciplinas = [
+    'Banco de Dados',
+    'Programação Orientada a Objetos',
+    'Engenharia de Software',
+    'Redes de Computadores',
+    'Desenvolvimento Web',
+    'Sistemas Operacionais'
+  ];
+
+}

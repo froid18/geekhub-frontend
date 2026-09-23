@@ -1,1 +1,21 @@
-<p>ex7 works!</p>
+
+<h2>Cores alternadas</h2>
+
+<ul>
+  @for (disciplina of disciplinas; track $index;
+    let par = $even;
+    let impar = $odd;
+    let primeiro = $first;
+    let ultimo = $last) {
+
+    <li [ngClass]="{
+      'par': par,
+      'impar': impar,
+      'primeira': primeiro,
+      'ultima': ultimo
+    }">
+      {{ disciplina }}
+    </li>
+
+  }
+</ul>

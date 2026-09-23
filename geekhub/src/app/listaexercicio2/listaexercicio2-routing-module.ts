@@ -7,6 +7,8 @@ import { Ex3 } from './ex3/ex3';
 import { Ex4 } from './ex4/ex4';
 import { Ex5 } from './ex5/ex5';
 import { Ex6 } from './ex6/ex6';
+import { Ex7 } from './ex7/ex7';
+
 const routes: Routes = [
   {
     path: 'ex1',
@@ -20,14 +22,22 @@ const routes: Routes = [
     path: 'ex3',
     component: Ex3
   },
-  { path: 'ex4',
+  {
+    path: 'ex4',
     component: Ex4
-   },
-  { path: 'ex5',
+  },
+  {
+    path: 'ex5',
     component: Ex5
-   },
-   { path: 'ex6',
-     component: Ex6 }
+  },
+  {
+    path: 'ex6',
+    component: Ex6
+  },
+  {
+    path: 'ex7',
+    component: Ex7
+  }
 ];
 
 @NgModule({
